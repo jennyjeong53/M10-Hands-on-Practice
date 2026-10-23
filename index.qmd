@@ -1,0 +1,79 @@
+---
+title: "Yujin Jeong"
+subtitle: "Digital Marketing Student • Data-Informed Storyteller"
+image: "profile-placeholder.jpg"
+about:
+  template: jolla
+  image-width: 12em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/
+    - icon: github
+      text: GitHub
+      href: https://github.com/jennyjeong53/M10-Hands-on-Practice
+page-layout: full
+---
+
+## About Me
+
+I am a Master of Science in Digital Marketing student at Cal Poly Pomona with a background in marketing management, paid media, analytics, and entertainment marketing. I enjoy turning customer behavior and campaign data into clear recommendations that help organizations make better decisions.
+
+My career goal is to work in entertainment, where I can combine creative storytelling with measurement, audience insights, and digital performance optimization.
+
+::: callout-note
+### What I bring
+
+I connect creative ideas with measurable outcomes. My work focuses on understanding the audience, selecting meaningful KPIs, and communicating insights in a way that stakeholders can act on.
+:::
+
+## Career Aspirations
+
+-   Build data-informed digital campaigns for entertainment and lifestyle brands.
+-   Develop expertise in paid media, audience strategy, and marketing analytics.
+-   Create inclusive and engaging brand experiences across social, search, and owned channels.
+
+## Skills
+
+::::::: skill-grid
+::: skill-card
+**Marketing Analytics**\
+GA4, GTM, Meta Pixel, UTM strategy, Looker Studio, KPI design
+:::
+
+::: skill-card
+**Paid Media**\
+Amazon DSP, DV360, Campaign Manager 360, pacing, QA, optimization
+:::
+
+::: skill-card
+**Data & Research**\
+R, Quarto, time-series analysis, regression, A/B testing, dashboard design
+:::
+
+::: skill-card
+**Communication**\
+Presentation design, client questions, insight summaries, cross-functional collaboration
+:::
+:::::::
+
+## Education
+
+| Degree | Institution | Status |
+|:-----------------------|:-----------------------|:-----------------------|
+| M.S. Digital Marketing | California State Polytechnic University, Pomona | Expected August 2027 |
+| B.S. Marketing Management | California State Polytechnic University, Pomona | Completed August 2024 |
+
+## Selected Experience
+
+### Programmatic Advertising Intern — The Walt Disney Company
+
+Supported campaign setup, trafficking, quality assurance, pacing, KPI monitoring, and optimization across Amazon DSP, DV360, and Campaign Manager 360. Collaborated with media vendors and internal stakeholders to support entertainment marketing campaigns.
+
+### Digital Marketing Associate — Cuckoo America
+
+Supported digital campaigns and content initiatives that contributed to higher click-through rate, lower cost per click, and increased website traffic.
+
+::: portfolio-cta
+Explore the [Avenue Shabu Project Dashboard](dashboard.qmd) to see how I designed a measurement framework for connecting digital advertising actions with restaurant visits.
+:::
