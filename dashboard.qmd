@@ -1,0 +1,87 @@
+---
+title: "Avenue Shabu Project Dashboard"
+subtitle: "Measuring the path from digital intent to restaurant visits"
+page-layout: full
+---
+
+## Project Overview
+
+Avenue Shabu is a single-location dine-in restaurant in Huntington Beach, California. The project objective is to increase qualified offline visits by connecting digital customer actions with restaurant performance data.
+
+::: {.grid .dashboard-grid}
+::: {.metric-card}
+### North Star KPI
+**Completed online reservations**
+
+Reservation-button clicks are used as a proxy when completed reservations are not available.
+:::
+
+::: {.metric-card}
+### Business Outcome
+**Incremental guest covers**
+
+Toast POS data provides the operational measure of restaurant visits.
+:::
+
+::: {.metric-card}
+### Audience Focus
+**3–5 mile local radius**
+
+The campaign prioritizes nearby customers and off-peak demand.
+:::
+:::
+
+## KPI Tree
+
+```{mermaid}
+flowchart TD
+    A[Qualified Restaurant Visits] --> B[Completed Reservations]
+    A --> C[Guest Covers]
+    A --> D[Off-Peak Seat Fill]
+    B --> E[Reservation Clicks]
+    E --> F[Landing Page Visits]
+    C --> G[Click-to-Call]
+    C --> H[Get Directions]
+    D --> I[Menu Views and Interactions]
+```
+
+## Measurement Design
+
+| Layer | Data source | Measures | Decision supported |
+|:--|:--|:--|:--|
+| Digital intent | GA4 / GTM / GBP | Calls, directions, menu views, reservation clicks | Which channels create high-intent actions? |
+| Advertising | Meta Ads | Spend, reach, clicks, creative, audience | Which audience and creative should receive budget? |
+| Restaurant outcome | Toast POS | Sales, transactions, guest covers, daypart | Did digital activity increase actual visits? |
+| Impact analysis | R / Python | Baseline, lift, incremental revenue, ROAS | Was the campaign cost-effective? |
+
+## Event and Parameter Map
+
+| Event name | User action | Important parameters |
+|:--|:--|:--|
+| `click_to_call` | Taps the phone link | `page_location`, `source`, `medium`, `campaign` |
+| `get_directions` | Requests directions | `page_location`, `source`, `medium`, `campaign` |
+| `menu_view` | Opens the menu | `page_path`, `device_category`, `campaign` |
+| `menu_interaction` | Interacts with the menu | `page_path`, `item_name`, `campaign` |
+| `reservation_click` | Clicks the reservation CTA | `page_location`, `source`, `medium`, `campaign` |
+
+## Analytical Approach
+
+1. **Digital micro-conversion tracking:** Capture high-intent actions using GA4, GTM, GBP, and campaign UTM parameters.
+2. **Daypart testing:** Compare creative formats, channel mix, and off-peak exposure windows.
+3. **Pre–post and time-series modeling:** Compare campaign-on and campaign-off periods while controlling for day of week, seasonality, holidays, and weather.
+
+The planned campaign schedule is **ON / OFF / ON / OFF**, using 10 weeks of exposure windows. Historical Toast POS exports will be used to estimate incremental guest covers, revenue lift, cost per visit, and ROAS.
+
+::: {.callout-important}
+### Measurement limitation
+
+Because Avenue Shabu is a single location without a formal control store, the analysis will report estimated incremental impact rather than claim perfect causal certainty. The washout period and time-series controls are included to reduce confounding.
+:::
+
+## Recommended Reporting View
+
+The final dashboard should answer three customer-oriented questions:
+
+- Which digital channels produce the strongest evidence of nearby customer intent?
+- Which creative formats help fill off-peak restaurant capacity?
+- How much incremental revenue and guest-cover lift can be associated with campaign exposure?

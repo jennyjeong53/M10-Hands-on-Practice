@@ -1,0 +1,41 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Yujin Jeong | Digital Marketing Portfolio"
+  description: "A digital marketing portfolio by Yujin Jeong"
+  navbar:
+    background: "#14213D"
+    foreground: "white"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: dashboard.qmd
+        text: Project Dashboard
+      - href: css.qmd
+        text: CSS / SCSS
+      - href: listings.qmd
+        text: Listings
+    right:
+      - icon: github
+        href: "https://github.com/jennyjeong53/M10-Hands-on-Practice"
+        aria-label: GitHub repository
+  page-footer:
+    left: "© 2026 Yujin Jeong"
+    right:
+      - text: "GitHub Repository"
+        href: "https://github.com/jennyjeong53/M10-Hands-on-Practice"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    code-fold: true
+    code-tools: true
+    anchor-sections: true
+
+editor: visual

@@ -1,0 +1,51 @@
+---
+title: "How CSS / SCSS Extends a Quarto Website"
+subtitle: "A short styling demonstration"
+---
+
+## Why Use CSS?
+
+Quarto provides a strong default document structure, but CSS allows a creator to control the visual hierarchy, spacing, color palette, cards, responsive behavior, and brand identity of a website. In this project, custom CSS is used to make the portfolio feel more like a personal digital marketing site than a default report.
+
+## CSS Features Used in This Website
+
+| Feature | Example in this website | Purpose |
+|:--|:--|:--|
+| CSS variables | `--navy`, `--coral`, `--cream` | Keep the color system consistent |
+| Grid layout | `.skill-grid`, `.dashboard-grid` | Arrange content responsively |
+| Cards | `.skill-card`, `.metric-card` | Highlight important information |
+| Media queries | `@media (max-width: 768px)` | Improve mobile readability |
+| Hover states | `.skill-card:hover` | Give users visual feedback |
+
+## Example: Custom Card Styling
+
+The following code is included in `styles.css` and is applied to the skill cards on the home page.
+
+```css
+.skill-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.08);
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: #f28f79;
+}
+```
+
+## Design Decisions
+
+- **Navy** communicates trust and professionalism.
+- **Coral** creates a warm accent for marketing and hospitality content.
+- **Cream** softens the background and improves visual comfort.
+- **Rounded cards** organize information into scannable sections.
+- **Responsive grids** allow the website to remain readable on phones and laptops.
+
+::: {.callout-tip}
+### Learning reflection
+
+Using CSS separately from the QMD content makes the website easier to maintain. The content remains readable in the source file, while the stylesheet controls the visual system across all pages.
+:::

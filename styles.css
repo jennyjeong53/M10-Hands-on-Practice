@@ -1,0 +1,119 @@
+:root {
+  --navy: #14213d;
+  --blue: #1f4e79;
+  --coral: #f28f79;
+  --cream: #fffaf5;
+  --ink: #253047;
+  --muted: #667085;
+}
+
+body {
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.7;
+}
+
+.navbar {
+  box-shadow: 0 2px 14px rgba(20, 33, 61, 0.12);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3 {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+}
+
+a {
+  color: var(--blue);
+}
+
+.about-entity .about-image {
+  border: 6px solid white;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.18);
+}
+
+.callout {
+  border-radius: 14px;
+}
+
+.skill-grid,
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.dashboard-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.skill-card,
+.metric-card {
+  background: white;
+  border: 1px solid #e8e8ee;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-card:hover,
+.metric-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--coral);
+}
+
+.metric-card h3 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.metric-card strong {
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.portfolio-cta {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 5px solid var(--coral);
+  background: #fff0eb;
+  border-radius: 0 14px 14px 0;
+}
+
+table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: var(--navy);
+  color: white;
+}
+
+pre {
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .skill-grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-entity {
+    text-align: center;
+  }
+}

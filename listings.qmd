@@ -1,0 +1,45 @@
+---
+title: "Listings in Quarto"
+subtitle: "Organizing portfolio content for future growth"
+---
+
+## What Is a Listing?
+
+A Quarto listing is a structured collection of documents, posts, projects, or other content that Quarto automatically displays as a searchable or filterable list. Listings are useful when a website will grow over time because new content can be added without manually redesigning the homepage.
+
+## How Listings Could Support My Portfolio
+
+For a digital marketing portfolio, a listing could organize:
+
+- Analytics and dashboard projects
+- Paid media campaign analyses
+- SEO and content strategy work
+- Coursework and data visualizations
+- Professional reflections and case studies
+
+## Example Listing Configuration
+
+The following example shows the basic structure that could be added to a future Quarto page.
+
+```yaml
+listing:
+  contents: projects
+  type: grid
+  fields: [title, description, date]
+  sort: "date desc"
+  categories: true
+  sort-ui: true
+  filter-ui: true
+```
+
+This configuration tells Quarto to collect project files from a folder, display them in a grid, show selected fields, and provide sorting and filtering controls.
+
+## Customer-Oriented Value
+
+Listings improve the visitor experience by helping an audience find the information that matters to them. A recruiter could filter for analytics work, a marketing manager could review campaign projects, and a professor could quickly locate coursework.
+
+::: {.callout-note}
+### Future extension
+
+The next version of this portfolio could add a `projects/` folder and use a listing page to display each project as a visual case study with a title, short summary, tools, and measurable outcome.
+:::
